@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  @import "compass/css3";
+body {
+    text-align: center;
+    background-color: #29204d;
+    background-image: url("./fondocine.jpg"); 
+    /* Para dejar la imagen de fondo centrada, vertical y
+    horizontalmente */
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización
+     para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el
+     cambio del ancho de ventana del navegador */
+    background-size: cover;
+}
+    header {
+        
+        color-interpolation-filters: rgb(48, 43, 43);
+    }
+
+    .tittle {
+        margin: 10px;
+        font-weight: 500;
+        color: #212121;
+      }
+      h1 {
+        margin-top: 5%;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 350%;
+        text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+      }
+      p {
+        font-size: 120%;
+      }
+
+    main {
+        /* justify-content: center; */
+    }
+        section {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width:"90%" border="0" align="center"
+        }
+
+            table th {
+                color: black;
+                background-color: #91CBF9;
+                } /*color del encabezado de la tabla */
+
+            thead th {
+                Height:35;
+                WIDTH:80;
+                background: rgba(255, 128, 0, 0.3);
+                border: 1px solid rgba(200, 100, 0, 0.3);
+            }
+
+            td {
+                WIDTH:60;
+                HEIGHT:50;
+                text-align: center;
+
+                } /*color del encabezado de la tabla */
+
+            tbody {
+                background: rgba(128, 255, 0, 0.3);
+                    border: 1px solid rgba(100, 200, 0, 0.3);
+                }
+                .button {
+                    background-color: #ef7714;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                    padding:15px 20px;
+                    margin-bottom: 20px;
+                    margin-left: 30px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    -moz-osx-font-smoothing: grayscale;
+                    position: relative;
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-property: transform;
+                    transition-property: transform;
+                        text-decoration: none;
+                }
+                .button:before {
+                    pointer-events: none;
+                    position: absolute;
+                    z-index: -1;
+                    content: '';
+                    top: 100%;
+                    left: 5%;
+                    height: 5px;
+                    width: 90%;
+                    opacity: 0;
+                    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+                    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+                    -webkit-transition-duration: 0.3s;
+                    transition-duration: 0.3s;
+                    -webkit-transition-property: transform, opacity;
+                    transition-property: transform, opacity;
+                }
+                .button:hover, .button:focus, .button:active {
+                    -webkit-transform: translateY(-5px);
+                    transform: translateY(-5px);
+                    color: #fff;
+                }
+                .button:hover:before, .button:focus:before, .button:active:before {
+                    opacity: 1;
+                    -webkit-transform: translateY(5px);
+                    transform: translateY(5px);
+                }
+                
+    footer textarea {
+        visibility:hidden;  
+    }
